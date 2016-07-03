@@ -36,7 +36,7 @@ Installation
 
 .. Code:: bash
 
-  $ boilr template download littlemanco/boilr-k8sdaemonset boilr/k8sdaemonset
+  $ boilr template download littlemanco/boilr-k8sdaemonset k8sdaemonset
 
 Usage
 -----
@@ -49,7 +49,7 @@ Swap `foo` and `bar` for your own values.
   $ cd foo
   $ git init
   $ git remote set-url origin git@github.com:foo/bar.git
-  $ boilr template use boilr/k8sdaemonset
+  $ boilr template use k8sdaemonset .
   $ git add .
   $ git commit -m "Initial Commit"
   $ git push
