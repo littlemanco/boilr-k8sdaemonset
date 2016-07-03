@@ -1,9 +1,28 @@
 {
-  "TemplateName": "boilr-template",
-  "Authors": "Andrew Howden <hello[at]andrewhowden.com>",
-  "Year": "2016",
-  "GithubReference": "littlemanco/boilr-template",
-  "ProjectGoal": "",
-  "SimilarWork": "",
-  "Justification": ""
+  "Service": "NodeExporter",
+  "ApplicationName": "node-exporter",
+  "ApplicationRole": "metrics",
+  "ApplicationVersion": "1.0.0",
+  "ApplicationPort": "9100",
+  "ApplicationPortName": "scrape",
+  "ApplicationPortProtocol": [
+    "TCP",
+    "UDP"
+  ],
+  "ApplicationHealthCheckPeriod": 15,
+  "ApplicationBootTime": 15,
+  "ProbeType": [
+    "http",
+    "tcp"
+  ],
+  "UseHostPid": [
+    "true",
+    "false"
+  ],
+  "UseHostNetwork": [
+    "true",
+    "false"
+  ],
+  "Image": "prom/node-exporter",
+  "ImageVersion": "0.12.0"
 }
